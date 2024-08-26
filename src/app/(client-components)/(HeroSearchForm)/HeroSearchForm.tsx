@@ -6,7 +6,7 @@ import ExperiencesSearchForm from './(experiences-search-form)/ExperiencesSearch
 import RentalCarSearchForm from './(car-search-form)/RentalCarSearchForm';
 import FlightSearchForm from './(flight-search-form)/FlightSearchForm';
 
-export type SearchTab = 'Konaklama' | 'Transfer';
+export type SearchTab = 'Stays' | 'Transfer';
 
 export interface HeroSearchFormProps {
   className?: string;
@@ -19,7 +19,7 @@ const HeroSearchForm: FC<HeroSearchFormProps> = ({
   currentTab = 'Transfer',
   currentPage,
 }) => {
-  const tabs: SearchTab[] = ['Transfer', 'Konaklama'];
+  const tabs: SearchTab[] = ['Transfer', 'Stays'];
   const [tabActive, setTabActive] = useState<SearchTab>(currentTab);
 
   const renderTab = () => {
@@ -50,7 +50,7 @@ const HeroSearchForm: FC<HeroSearchFormProps> = ({
 
   const renderForm = () => {
     switch (tabActive) {
-      case 'Konaklama':
+      case 'Stays':
         return <StaySearchForm />;
       // case 'Experiences':
       //   return <ExperiencesSearchForm />;

@@ -1,9 +1,9 @@
-import SectionHeroArchivePage from "@/app/(server-components)/SectionHeroArchivePage";
-import BgGlassmorphism from "@/components/BgGlassmorphism";
-import SectionSliderNewCategories from "@/components/SectionSliderNewCategories";
-import SectionSubscribe2 from "@/components/SectionSubscribe2";
-import React, { FC } from "react";
-import SectionGridFilterCard from "../SectionGridFilterCard";
+import SectionHeroArchivePage from '@/app/(server-components)/SectionHeroArchivePage';
+import BgGlassmorphism from '@/components/BgGlassmorphism';
+import SectionSliderNewCategories from '@/components/SectionSliderNewCategories';
+import SectionSubscribe2 from '@/components/SectionSubscribe2';
+import React, { FC } from 'react';
+import SectionGridFilterCard from '../SectionGridFilterCard';
 
 export interface ListingFlightsPageProps {}
 
@@ -15,8 +15,8 @@ const ListingFlightsPage: FC<ListingFlightsPageProps> = ({}) => {
       <div className="container relative">
         {/* SECTION HERO */}
         <SectionHeroArchivePage
-          currentPage="Flights"
-          currentTab="Flights"
+          currentPage="Stays"
+          currentTab="Transfer"
           listingType={
             <>
               <i className="text-2xl las la-plane-departure"></i>

@@ -1,11 +1,11 @@
-import BgGlassmorphism from "@/components/BgGlassmorphism";
-import React, { ReactNode } from "react";
-import SectionHeroArchivePage from "../(server-components)/SectionHeroArchivePage";
-import heroRightImage from "@/images/hero-right-car.png";
-import BackgroundSection from "@/components/BackgroundSection";
-import SectionSliderNewCategories from "@/components/SectionSliderNewCategories";
-import SectionSubscribe2 from "@/components/SectionSubscribe2";
-import SectionGridAuthorBox from "@/components/SectionGridAuthorBox";
+import BgGlassmorphism from '@/components/BgGlassmorphism';
+import React, { ReactNode } from 'react';
+import SectionHeroArchivePage from '../(server-components)/SectionHeroArchivePage';
+import heroRightImage from '@/images/hero-right-car.png';
+import BackgroundSection from '@/components/BackgroundSection';
+import SectionSliderNewCategories from '@/components/SectionSliderNewCategories';
+import SectionSubscribe2 from '@/components/SectionSubscribe2';
+import SectionGridAuthorBox from '@/components/SectionGridAuthorBox';
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
@@ -16,8 +16,8 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <div className="container pt-10 pb-24 lg:pt-16 lg:pb-28">
         <SectionHeroArchivePage
           rightImage={heroRightImage}
-          currentPage="Cars"
-          currentTab="Cars"
+          currentPage="Stays"
+          currentTab="Stays"
           listingType={
             <>
               <i className="text-2xl las la-car"></i>
